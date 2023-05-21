@@ -1,0 +1,35 @@
+1. Get me IP address of a particular domain (guvi.in) 
+
+nslookup guvi.in
+
+Non-authoritative answer:
+Name:    guvi.in
+Addresses:  2606:4700:3030::ac43:9016
+          2606:4700:3034::6815:5f5f
+          104.21.95.95
+          172.67.144.22
+
+2. How do I find my CPU/memory usage of my server? 
+
+top
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                        
+    1 root      20   0    2324   1504   1404 S   0.0   0.0   0:00.01 init(Ubuntu-20.
+    4 root      20   0    2324      4      0 S   0.0   0.0   0:00.00 init
+   41 root      20   0    2332    108      0 S   0.0   0.0   0:00.00 SessionLeader
+   42 root      20   0    2348    112      0 S   0.0   0.0   0:00.04 Relay(43)
+
+3. Test the connectivity between 2 nodes?
+
+
+4. I have deployed an application in guvi.com:9000, and logs shows my app is running, but I’m unable to view the page. Check whether my port is open or not ?"
+
+telnet guvi.com 9000
+
+Trying 172.67.146.154...
+
+
+Trying 104.21.79.166...
+Trying 2606:4700:3031::6815:4fa6...
+Trying 2606:4700:3037::ac43:929a...
+telnet: Unable to connect to remote host: Network is unreachable
