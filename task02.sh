@@ -1,4 +1,4 @@
-# Create the file with .txt extension
+# Create the file with .txt extension new
 touch /home/demo.txt
 
 # Set the permissions
