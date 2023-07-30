@@ -47,3 +47,23 @@ volumes:
 Deploy the container with Docker Compose
 
 docker-compose up -d
+
+Push the created custom docker image to your docker hub:
+
+
+root@ip-172-31-2-197:/home/ubuntu# docker push arunya23/nginx-custom
+Using default tag: latest
+The push refers to repository [docker.io/arunya23/nginx-custom]
+An image does not exist locally with the tag: arunya23/nginx-custom
+root@ip-172-31-2-197:/home/ubuntu# docker push arunya23/my-nginx:latest
+The push refers to repository [docker.io/arunya23/my-nginx]
+922d16116201: Mounted from library/nginx
+abc3beec4b30: Mounted from library/nginx
+c88d3a8ff009: Mounted from library/nginx
+8aedfcd777c7: Mounted from library/nginx
+4deafab383fa: Mounted from library/nginx
+24ee1d7d6a62: Mounted from library/nginx
+c6e34807c2d5: Mounted from library/nginx
+latest: digest: sha256:73e957703f1266530db0aeac1fd6a3f87c1e59943f4c13eb340bb8521c6041d7 size: 1778
+root@ip-172-31-2-197:/home/ubuntu#
+
